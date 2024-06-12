@@ -1,1 +1,1 @@
-# Projeto-S-nior-Conecta
+# Projeto-Sênior-Conecta
