@@ -1,0 +1,52 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sênior Conecta</title>
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="icon" type="image/png" href="Imagens/Background.png">
+    <link rel="stylesheet" href="Styles/Pagina Inicial.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <img src="Imagens/Background.png" alt="Ícone do Menu" class="menu-icon">
+        
+        <div class="menu animate__animated">
+            <a href="#pagina-inicial">Início</a>
+            <a href="#trabalhador">Trabalhador</a>
+            <a href="#empresa">Empresa</a>
+        </div>
+    </div>
+    <section id="pagina-inicial" class="pagina">
+        <button id="confiraBtn" class="confira-btn">CONFIRA!</button>
+    </section>
+    <section id="escolha" class="pagina">
+        <!-- <i class="fa-solid fa-play" style="color: #000000;"></i>
+        <i class="fa-solid fa-play" style="color: #ff0000;"></i>
+        <i class="fa-solid fa-play" style="color: #ffffff;"></i>
+        <i class="fa-solid fa-play fa-bounce" style="color: #1c7865;"></i> -->
+
+        <div class="escolha-container">
+            <div class="escolha-trabalhador escolha-div">
+                <button class="escolha-button trabalhador-btn" onclick="scrollToSection('trabalhador')">CLIQUE AQUI</button>
+            </div>
+            <div class="escolha-empresa escolha-div">
+                <button class="escolha-button empresa-btn" onclick="scrollToSection('empresa')">CLIQUE AQUI</button>
+            </div>
+        </div>
+    </section>
+    <section id="trabalhador" class="pagina">
+        <img class="trabalhador-login-btn" src="Imagens/Login Trabalhador icone.png" alt="" onclick="navigateTo('login-trabalhador.html')">
+        <img class="trabalhador-cadastro-btn" src="Imagens/Cadastro Trabalhador icone.png" alt="" onclick="navigateTo('cadastro-trabalhador.html')">
+    </section>
+    <section id="empresa" class="pagina">
+        <img class="empresa-login-btn" src="Imagens/Login Empresa icone .png" alt="" onclick="navigateTo('login-empresa.html')">
+        <img class="empresa-cadastro-btn" src="Imagens/Cadastro Empresa icone.png" alt="" onclick="navigateTo('cadastro-empresa.html')">
+    </section>
+    <section id="final" class="pagina"></section>
+    <script src="Js/scripts.js"></script>
+</body>
+</html>
