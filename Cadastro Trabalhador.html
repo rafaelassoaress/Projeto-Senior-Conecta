@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="Styles/Cadastro Trabalhador.css">
+</head>
+<body>
+    <div id="imagem_trabalhador">
+        <img src="Imagens/Escolha trabalhador.png">
+    </div>
+    <div class="container">
+        <div class="titulo_formulario">
+            <br> <strong>PROFISSIONAL SÊNIOR </strong> <br>
+            <strong>FAÇA SEU CADASTRO</strong>
+        </div>
+        <div class="formulario">
+            <form id="cadastroForm" action="/processar-formulario" method="post" novalidate>
+
+                <label for="dia"><strong>Data de Nascimento*</strong></label>
+                <div class="data-nascimento">
+                    <label for="dia"><strong>Dia</strong></label>
+                    <select id="dia" name="dia" required>
+                        <option value="selecione">Selecione</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>
+        
+                    <label for="mes"><strong>Mês</strong></label>
+                    <select id="mes" name="Mês" required>
+                        <option value="selecione">Selecione</option>
+                        <option value="1">Janeiro</option>
+                        <option value="2">Fevereiro</option>
+                        <option value="3">Março</option>
+                        <option value="4">Abril</option>
+                        <option value="5">Maio</option>
+                        <option value="6">Junho</option>
+                        <option value="7">Julho</option>
+                        <option value="8">Agosto</option>
+                        <option value="9">Setembro</option>
+                        <option value="10">Outubro</option>
+                        <option value="11">Novembro</option>
+                        <option value="12">Dezembro</option>
+                        </select>
+        
+                    <label for="ano"><strong>Ano</strong></label>
+                    <select id="ano" name="Ano" required>
+                        <option value="selecione">Selecione</option>
+                        
+                        <option value="1965">1965</option>
+                        <option value="1964">1964</option>
+                        <option value="1963">1963</option>
+                        <option value="1962">1962</option>
+                        <option value="1961">1961</option>
+                        <option value="1960">1960</option>
+                        <option value="1959">1959</option>
+                        <option value="1958">1958</option>
+                        <option value="1957">1957</option>
+                        <option value="1956">1956</option>
+                        <option value="1955">1955</option>
+                        <option value="1954">1954</option>
+                        <option value="1953">1953</option>
+                        <option value="1952">1952</option>
+                        <option value="1951">1951</option>
+                        <option value="1950">1950</option>
+                        <option value="1949">1949</option>
+                        <option value="1948">1948</option>
+                        <option value="1947">1947</option>
+                        <option value="1946">1946</option>
+                        <option value="1945">1945</option>
+                        <option value="1944">1944</option>
+                        <option value="1943">1943</option>
+                        <option value="1942">1942</option>
+                        <option value="1941">1941</option>
+                        <option value="1940">1940</option>
+                        <option value="1939">1939</option>
+                        <option value="1938">1938</option>
+                        <option value="1937">1937</option>
+                        <option value="1936">1936</option>
+                        <option value="1935">1935</option>
+                        <option value="1934">1934</option>
+                        <option value="1933">1933</option>
+                        <option value="1932">1932</option>
+                        <option value="1931">1931</option>
+                        <option value="1930">1930</option>
+                        <option value="1929">1929</option>
+                        <option value="1928">1928</option>
+                        <option value="1927">1927</option>
+                        <option value="1926">1926</option>
+                        <option value="1925">1925</option>
+                        <option value="1924">1924</option>
+                        <option value="1923">1923</option>
+                        <option value="1922">1922</option>
+                        <option value="1921">1921</option>
+                        <option value="1920">1920</option>
+                        <option value="1919">1919</option>
+                        <option value="1918">1918</option>
+                        <option value="1917">1917</option>
+                        <option value="1916">1916</option>
+                        <option value="1915">1915</option>
+                        <option value="1914">1914</option>
+                        <option value="1913">1913</option>
+                        <option value="1912">1912</option>
+                        <option value="1911">1911</option>
+                        <option value="1910">1910</option>
+                        <option value="1909">1909</option>
+                        <option value="1908">1908</option>
+                        <option value="1907">1907</option>
+                        <option value="1906">1906</option>
+                        <option value="1905">1905</option>
+                        <option value="1904">1904</option>
+                    </select>
+                  
+                </div>
+<br>
+                <label for="nome"><strong>Nome Completo*</strong></label>
+                <input type="textlong" id="nome" name="nome" required>
+<br>
+<br>
+                <label for="telefone"><strong>Telefone*</strong></label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(xx) xxxx-xxxx" pattern="\([0-9]{2}\) [0-9]{4}-[0-9]{4}" title="Digite um número de telefone válido com DDD" required>
+<br>
+<br>
+                <label for="endereco"><strong>Endereço*</strong></label>
+                <input type="textlong" id="endereco" name="endereco" required>
+<br>
+<br>
+                <label for="cpf"><strong>CPF*</strong></label>
+                <input type="text" id="cpf" name="cpf" pattern="\d{11}" title="Digite um CPF válido (apenas números, 11 dígitos)" required>
+<br>            <p class="cpf-info"><em>(Seu CPF contém 11 dígitos, digite somente os números)</em></p>
+<br>
+                <label for="profissao"><strong>Profissão*</strong></label>
+                <input type="text" id="profissao" name="profissao" required>
+<br>
+<br>
+                <label><strong>Possui registro CLT?*</strong></label>
+
+                <div class="clt-options">
+                    <input type="radio" id="clt-sim" name="clt" value="sim" required>Sim
+                    <input type="radio" id="clt-nao" name="clt" value="nao" required>Não
+                </div>
+<br>
+                <label for="experiencia"><strong>Tempo de experiência*</strong></label>
+                <input type="textlong" id="experiencia" name="experiencia" required>
+                <br>
+                <br>
+                <label for="habilidades"><strong>Escreva um resumo de suas habilidades*</strong></label>
+                <br><textarea id="habilidades" name="habilidades" required></textarea>
+
+                <br>
+<br>
+<label><strong>Possui alguma doença ou deficiência?*</strong></label>
+                <div class="doenca-options">
+                    <input type="radio" id="doenca-sim" name="doenca" value="sim" required>Sim
+                    <input type="radio" id="doenca-nao" name="doenca" value="nao" required>Não
+                </div>
+
+                <br><br>
+                <label for="senha"><strong>Cadastre uma Senha*</strong></label>
+                <input type="password" id="senha" name="senha" pattern="(?=.*[a-zA-Z])(?=.*\d).{8,}" title="A senha deve conter pelo menos 8 caracteres, com pelo menos uma letra e um número" required>
+                <p class="senha-info"><em>(A senha deve conter no mínimo 8 caracteres, com pelo menos uma letra e um número)</em></p>
+                
+                <br><br>
+                <label for="aceitar-termos"><strong>Aceitar Termos e Condições</strong></label>
+                <input type="checkbox" id="aceitar-termos" name="aceitar-termos" required>
+<br><br>
+                <input type="submit" value="ENVIAR">
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>

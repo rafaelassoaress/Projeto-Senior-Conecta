@@ -1,0 +1,108 @@
+body {
+    font-family: 'TT Octosquares', sans-serif;
+    background-color: #faefe6;
+    color: #0b3436;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: 700px;
+    padding: 20px;
+    background-color: #23929862;
+    box-shadow: 0 0 10px rgba(212, 83, 83, 0.1);
+    border-radius: 10px;
+}
+
+.titulo_formulario {
+    text-align: center;
+    font-family: 'TT Octosquares Bold', sans-serif;
+    color: #0e3535;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.formulario {
+    width: 600px;
+    font-size: 18px;
+    padding: 23px;
+    margin-top: 30px; 
+    margin-left: 0 auto;
+    margin-bottom: 75px;
+}
+#imagem_trabalhador{
+    width:10px;
+    height: 10px;
+
+}
+
+input[type="text"], input[type="tel"], input[type="password"], select{
+    border-radius: 5px; 
+    width: 155px;
+    padding: 10px; 
+    margin-bottom: 20px; 
+    border: 1px solid #ccc;
+}
+
+input[type="textlong"]{
+    border-radius: 5px; 
+    width: 350px;
+    padding: 10px; 
+    margin-bottom: 20px; 
+    border: 1px solid #ccc; 
+}
+
+textarea {
+    height: 150px; 
+    width: 500px;
+    border-radius: 5px; 
+    padding: 10px; 
+    margin-bottom: 20px; 
+    border: 1px solid #ccc;
+}
+input[type="checkbox"]{
+    border-radius: 5px; 
+   transform: scale(1.5);
+   margin:10px; 
+}
+
+input, select, textarea {
+    border-radius: 5px;
+    font-size: 16px; 
+}
+.senha-info {
+    font-size: 14px;
+    color: #000000;
+    margin-top: -10px; 
+}
+.cpf-info {
+    font-size: 14px;
+    color: #000000;
+    margin-top: -10px; 
+}
+
+input[type="submit"] {
+width: 250px;
+height: 50px;
+background-color:#0e3535;
+color:white;
+font-weight: bold;
+border: none;
+padding: 10px 10px;
+border-radius: 5px;
+cursor: pointer;
+font-family: 'TT Octosquares Bold', sans-serif;
+display: block;
+margin: 0 auto; 
+transition: background-color 0.3s ease;
+}
+input[type="submit"]:hover {
+    background: #027a28;
+}
+
+
