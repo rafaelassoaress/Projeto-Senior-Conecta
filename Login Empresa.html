@@ -1,11 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login Empresa</title>
+    <link rel="stylesheet" href="empresa.css">
 </head>
 <body>
-    
+    <div class="container">
+        <div class="login-form">
+            <h2>Login Empresa</h2>
+            <form>
+                <label for="email">E-MAIL:</label>
+                <input type="email" id="email" name="email">
+                <label for="password">SENHA:</label>
+                <input type="password" id="password" name="password">
+                <button type="submit">Login</button>
+                <button type="button" onclick="location.href='cadastro_empresa.html'">
+                    <img src="Imagens/Cadastro Empresa icone.png" alt="Cadastro Empresa">
+                </button>
+            </form>
+        </div>
+        <div class="image">
+            <img src="Imagens/Escolha empresa.png" alt="Empresa">
+        </div>
+    </div>
 </body>
 </html>

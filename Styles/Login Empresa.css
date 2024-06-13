@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'Black Mustang';
+    src: url('Fontes/black_mustang/Black Mustang.ttf');
+}
+
+body {
+    margin: 0;
+    font-family: 'Black Mustang', sans-serif;
+}
+body{
+    background-color: #FEF0E6;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    transition: transform 0.5s ease-in-out;
+}
+
+.login-form {
+    flex: 1;
+    background: #FEF0E6;
+    color: #007377;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+}
+
+.login-form label {
+    margin: 10px 0 5px;
+}
+
+.login-form input {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 300px;
+    border: none;
+    border-radius: 5px;
+}
+
+.login-form button[type="submit"] {
+    background: #007377;
+    color: #FEF0E6;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-form button[type="button"] {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.login-form button[type="button"] img {
+    width: 100px;
+    height: auto;
+}
+
+.image {
+    flex: 1;
+    background: #007377;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+}
