@@ -16,7 +16,7 @@
         
         <div class="menu animate__animated">
             <a href="#pagina-inicial">Início</a>
-            <a href="#trabalhador">Profissional Sênior</a>
+            <a href="#trabalhador">Trabalhador</a>
             <a href="#empresa">Empresa</a>
         </div>
     </div>
@@ -24,11 +24,7 @@
         <button id="confiraBtn" class="confira-btn">CONFIRA!</button>
     </section>
     <section id="escolha" class="pagina">
-        <!-- <i class="fa-solid fa-play" style="color: #000000;"></i>
-        <i class="fa-solid fa-play" style="color: #ff0000;"></i>
-        <i class="fa-solid fa-play" style="color: #ffffff;"></i>
-        <i class="fa-solid fa-play fa-bounce" style="color: #1c7865;"></i> -->
-
+        
         <div class="escolha-container">
             <div class="escolha-trabalhador escolha-div">
                 <button class="escolha-button trabalhador-btn" onclick="scrollToSection('trabalhador')">CLIQUE AQUI</button>
@@ -39,14 +35,23 @@
         </div>
     </section>
     <section id="trabalhador" class="pagina">
-        <img class="trabalhador-login-btn" src="Imagens/Login Trabalhador icone.png" alt="" onclick="navigateTo('login-trabalhador.html')">
-        <img class="trabalhador-cadastro-btn" src="Imagens/Cadastro Trabalhador icone.png" alt="" onclick="navigateTo('cadastro-trabalhador.html')">
+        <a href="Pages/login trabalhador.html">
+            <img class="trabalhador-login-btn" src="Imagens/Login Trabalhador icone.png" alt="Login Trabalhador">
+        </a>
+        <a href="Pages/cadastro trabalhador.html">
+            <img class="trabalhador-cadastro-btn" src="Imagens/Cadastro Trabalhador icone.png" alt="Cadastro Trabalhador">
+        </a>
     </section>
     <section id="empresa" class="pagina">
-        <img class="empresa-login-btn" src="Imagens/Login Empresa icone .png" alt="" onclick="navigateTo('login-empresa.html')">
-        <img class="empresa-cadastro-btn" src="Imagens/Cadastro Empresa icone.png" alt="" onclick="navigateTo('cadastro-empresa.html')">
+        <a href="Pages/login empresa.html">
+            <img class="empresa-login-btn" src="Imagens/Login Empresa icone .png" alt="Login Empresa">
+        </a>
+        <a href="Pages/cadastro empresa.html">
+            <img class="empresa-cadastro-btn" src="Imagens/Cadastro Empresa icone.png" alt="Cadastro Empresa">
+        </a>
     </section>
     <section id="final" class="pagina"></section>
     <script src="Js/scripts.js"></script>
+    <script src="Js/menu.js"></script>
 </body>
 </html>
