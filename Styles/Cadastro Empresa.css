@@ -16,9 +16,9 @@ body {
     margin-left: 700px;
     padding-bottom: 50px;
     padding: 20px;
-    background-color: #faefe6a3;
+    background-color: #fcf9f7c7;
     box-shadow: 0 0 10px rgba(212, 83, 83, 0.1);
-    border-radius: 10px;
+    border-radius: 50px;
     position:absolute;
     top:20px;
      
@@ -92,7 +92,7 @@ input, select, textarea {
 input[type="submit"] {
 width: 250px;
 height: 50px;
-background-color:#0e3535;
+background: #03a537;
 color:white;
 font-weight: bold;
 border: none;
@@ -105,7 +105,7 @@ margin: 0 auto;
 transition: background-color 0.3s ease;
 }
 input[type="submit"]:hover {
-    background: #027a28;
+    background: #06852e;
 }
 .imagem-container {
     width: 700px; 
