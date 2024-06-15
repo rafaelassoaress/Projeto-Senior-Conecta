@@ -41,7 +41,7 @@ body{
     padding: 10px;
     margin-bottom: 20px;
     width: 100%;
-    max-width: 270px;
+    max-width: 150px;
     border: none;
     border-radius: 5px;
  
@@ -83,11 +83,17 @@ body{
 }
 
 .login-form button[type="submit"] {
-    margin-left: 250px; 
+    margin-left: 110px; 
 }
 
 .p1 {
     font-size: 1em;
-   
     font-family:'fonte';
+    
+}
+
+.login-form button[type="submit"]:hover,
+.login-form button[type="button"]:hover {
+    background: #005f5f; 
+    color: #FFFFFF; 
 }
