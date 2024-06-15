@@ -1,5 +1,5 @@
 body {
-    font-family: 'TT Octosquares', sans-serif;
+    font-family: 'fonte 3';
     background-color: #2a7276;
     color: #0b3436;
     margin: 0;
@@ -26,7 +26,7 @@ body {
 
 .titulo_formulario {
     text-align: center;
-    font-family: 'TT Octosquares Bold', sans-serif;
+    font-family: 'fonte 3';
     color: #0e3535;
     font-size: 24px;
     
