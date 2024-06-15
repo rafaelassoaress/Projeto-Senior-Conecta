@@ -132,7 +132,7 @@ h1, h2 {
     font-family:'fonte';
 }
 
-p {
+.p {
     font-size: 1em;
     color: #007377;
     width: 80%;

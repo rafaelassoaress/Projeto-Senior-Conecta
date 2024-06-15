@@ -5,7 +5,7 @@
 
 body {
     margin: 0;
-    font-family: 'Black Mustang', sans-serif;
+    font-family: 'fonte 3';
 }
 body{
     background-color: #FEF0E6;
@@ -26,6 +26,7 @@ body{
     align-items: center;
     justify-content: center;
     padding: 20px;
+
 }
 
 .login-form h2 {
@@ -40,30 +41,33 @@ body{
     padding: 10px;
     margin-bottom: 20px;
     width: 100%;
-    max-width: 300px;
+    max-width: 270px;
     border: none;
     border-radius: 5px;
+ 
 }
 
 .login-form button[type="submit"] {
     background: #007377;
     color: #FEF0E6;
-    padding: 10px 20px;
+    padding: 15px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
+
+
 .login-form button[type="button"] {
-    background: none;
+    padding: 1px 15px;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
+    background: #007377;
+
 }
 
-.login-form button[type="button"] img {
-    width: 100px;
-    height: auto;
-}
+
 
 .image {
     flex: 1;
@@ -76,4 +80,14 @@ body{
 .image img {
     max-width: 100%;
     height: auto;
+}
+
+.login-form button[type="submit"] {
+    margin-left: 250px; 
+}
+
+.p1 {
+    font-size: 1em;
+   
+    font-family:'fonte';
 }
