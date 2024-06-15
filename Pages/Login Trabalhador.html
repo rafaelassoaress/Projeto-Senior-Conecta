@@ -27,18 +27,18 @@
         </div>
         <div class="login-form">
             <h2>Login Trabalhador</h2>
-            <form>
+            <form id="form">
                 <label for="email">E-MAIL:</label>
-                <input type="email" id="email" name="email">
+                <input type="email" id="email" name="email" onchange="onChangeEmail()">
+                <div class="error" id="email-invalid-error">Email é inválido</div>
+                <div class="error" id="email-required-error">Email é obrigatório</div>
                 <label for="password">SENHA:</label>
-                <input type="password" id="password" name="password">
-                
-                <div class="button-container">
-                    <button type="submit">Login</button>
-                    <button type="button" onclick="location.href='cadastro trabalhador.html'">
-                        <p>Cadastro</p>
-                    </button>
-                </div>
+                <input type="password" id="password" name="password" onchange="onChangePassword()">
+                <div class="error" id="passord-required-error">Senha é obrigatória</div>
+                <button type="submit">Login</button>
+                <button type="button" onclick="location.href='cadastro trabalhador.html'">
+                    <p>Cadastro</p>
+                </button>
             </form>
         </div>
     </div>
