@@ -27,3 +27,6 @@ $(document).ready(function() {
         });
     });
 });
+
+
+// Função para mensagem de alerta do JS

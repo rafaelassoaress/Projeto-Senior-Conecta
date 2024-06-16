@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11">
+
 </head>
 <body>
     <div class="header">
@@ -27,14 +29,11 @@
         </div>
         <div class="login-form">
             <h2>Login Trabalhador</h2>
-            <form id="form">
+            <form id="form" onsubmit="return validarFormulario()">
                 <label for="email">E-MAIL:</label>
                 <input type="email" id="email" name="email" onchange="onChangeEmail()">
-                <div class="error" id="email-invalid-error">Email é inválido</div>
-                <div class="error" id="email-required-error">Email é obrigatório</div>
                 <label for="password">SENHA:</label>
                 <input type="password" id="password" name="password" onchange="onChangePassword()">
-                <div class="error" id="passord-required-error">Senha é obrigatória</div>
                 <button type="submit">Login</button>
                 <button type="button" onclick="location.href='cadastro trabalhador.html'">
                     <p>Cadastro</p>
@@ -42,6 +41,63 @@
             </form>
         </div>
     </div>
+    <!-- Incluir CSS do SweetAlert (exemplo usando CDN) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11">
+
+    <!-- Incluir JavaScript do SweetAlert (exemplo usando CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+    <script>
+            // Função para validar o campo de e-mail
+        function onChangeEmail() {
+            var email = document.getElementById('email');
+            var emailValue = email.value.trim();
+            var isValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailValue);
+
+            if (!isValid) {
+                email.setCustomValidity('Por favor, digite um e-mail válido.');
+            } else {
+                email.setCustomValidity('');
+            }
+        }
+
+        // Função para validar o campo de senha
+        function onChangePassword() {
+            var password = document.getElementById('password');
+            var passwordValue = password.value.trim();
+
+            if (passwordValue.length < 6) {
+                password.setCustomValidity('A senha deve conter pelo menos 6 caracteres.');
+            } else {
+                password.setCustomValidity('');
+            }
+        }
+
+        // Função para validar o formulário antes do envio
+        document.getElementById('form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evitar o envio padrão do formulário
+
+            var email = document.getElementById('email');
+            var password = document.getElementById('password');
+
+            // Validar o e-mail e senha
+            onChangeEmail();
+            onChangePassword();
+
+            // Verificar se o formulário é válido
+            if (email.checkValidity() && password.checkValidity()) {
+                // Mostrar mensagem de sucesso usando SweetAlert
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Login realizado com sucesso!',
+                    showConfirmButton: false,
+                    timer: 1500
+                });
+
+            }
+        });
+</script>
     <script src="../Js/scripts.js"></script>
     <script src="../Js/menu.js"></script>
 </body>

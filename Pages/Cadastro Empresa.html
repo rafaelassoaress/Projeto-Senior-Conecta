@@ -24,60 +24,157 @@
         <img id="imagem_empresa" src="../Imagens/Cadastro-empresa-imagem.png" alt="Imagem da Empresa">
         
     </div>
-    
-        <div class="container">
+       
+        
+<div class="container">
+    <div class="form">
         <div class="titulo_formulario">
             <br> <strong>ÁREA PARA EMPRESAS </strong> <br>
             <strong>FAÇA O CADASTRO DE SUA EMPRESA</strong>
         </div>
-        <div class="formulario">
-            <form id="cadastroForm" action="/processar-formulario" method="post" novalidate>
-                            
-                </div>
-
-            <label for="cnpj"><strong>CNPJ*</strong></label>
-                <input type="textlong" id="cnpj" name="cnpj" pattern="\d{14}" title="Digite um CNPJ válido (apenas números, 14 dígitos)" required>
-<br>            <p class="cnpj-info"><em>(Digite somente números)</em></p>
-
-                <label for="nome"><strong>Razão Social*</strong></label>
-                <input type="textlong" id="nome" name="nome" required>
-<br>
-<br>
+        <br>
+        <form id="myForm">
+            <div class="form-control">
+                <label for="CNPJ"><strong>CNPJ*</strong></label>
+                <input type="text" id="CNPJ" name="cnpj" pattern="[0-9]{14}" title="Digite um CNPJ válido (apenas números, 14 dígitos)" required>
+                <br>
+                <p class="cnpj-info"><em>(Digite somente números)</em></p>
+            </div>
+            
+            <div class="form-control">       
+                <label for="username"><strong>Razão Social*</strong></label>
+                <input type="text" id="username" name="nome" placeholder="Digite a razão social..." required>
+                <br>
+            </div>
+            
+            <div class="form-control">    
                 <label for="nome"><strong>Nome Fantasia*</strong></label>
-                <input type="textlong" id="nome" name="nome" required>
-<br>
-<br>
+                <input type="text" id="nomeFantasia" name="nomeFantasia" placeholder="Digite o nome fantasia..." required>
+                <br>
+            </div>
+            
+            <div class="form-control">
                 <label for="endereco"><strong>Endereço*</strong></label>
-                <input type="textlong" id="endereco" name="endereco" required>
-<br>
-<br>
+                <input type="text" id="endereco" name="endereco" required>
+                <br>
+            </div>
+            
+            <div class="form-control">
                 <label for="telefone"><strong>Telefone*</strong></label>
                 <input type="tel" id="telefone" name="telefone" placeholder="(xx) xxxx-xxxx" pattern="\([0-9]{2}\) [0-9]{4}-[0-9]{4}" title="Digite um número de telefone válido com DDD" required>
-<br>
-<br>
-                           
-<br>
+                <br>
+            </div>
+            
+            <div class="form-control">
                 <label for="porte"><strong>Porte da Empresa*</strong></label>
                 <input type="text" id="porte" name="porte" required>
-<br>
-<br>
+                <br>
+            </div>
+            
+            <div class="form-control">
                 <label for="segmento"><strong>Segmento da Empresa*</strong></label>
                 <input type="text" id="segmento" name="segmento" required>
-<br>
-<br>
+                <br>
+            </div>
+            
+            <div class="form-control">
                 <label for="senha"><strong>Cadastre uma Senha*</strong></label>
                 <input type="password" id="senha" name="senha" pattern="(?=.*[a-zA-Z])(?=.*\d).{8,}" title="A senha deve conter pelo menos 8 caracteres, com pelo menos uma letra e um número" required>
                 <p class="senha-info"><em>(A senha deve conter no mínimo 8 caracteres, com pelo menos uma letra e um número)</em></p>
-                
-                <br><br>
-                <label for="aceitar-termos"><strong>Aceitar Termos e Condições</strong></label>
+                <br>
+            </div>
+            
+            <div class="form-control">
+                <label for="aceitar-termos"><strong>Aceitar Termos e Condições*</strong></label>
                 <input type="checkbox" id="aceitar-termos" name="aceitar-termos" required>
-<br><br>
-                <input type="submit" value="ENVIAR">
-            </form>
-        </div>
+                <br>
+            </div>
+            
+            <input type="submit" value="Enviar" onclick="validarFormulario()">
+        </form>
     </div>
-    <script src="../Js/scripts.js"></script>
-    <script src="../Js/menu.js"></script>
+</div>
+
+    <script>
+    function validarFormulario() {
+        // Validar CNPJ
+        var cnpj = document.getElementById('CNPJ').value;
+        if (cnpj.trim() === '' || !cnpj.match(/^[0-9]{14}$/)) {
+            alert('Por favor, digite um CNPJ válido (apenas números, e somente 14 dígitos).');
+            document.getElementById('CNPJ').focus();
+            return false;
+        }
+
+        // Validar Razão Social
+        var razaoSocial = document.getElementById('username').value;
+        if (razaoSocial.trim() === '') {
+            alert('Por favor, preencha o campo Razão Social.');
+            document.getElementById('username').focus();
+            return false;
+        }
+
+        // Validar Nome Fantasia
+        var nomeFantasia = document.getElementById('nomeFantasia').value;
+        if (nomeFantasia.trim() === '') {
+            alert('Por favor, preencha o campo Nome Fantasia.');
+            document.getElementById('nomeFantasia').focus();
+            return false;
+        }
+
+        // Validar Endereço
+        var endereco = document.getElementById('endereco').value;
+        if (endereco.trim() === '') {
+            alert('Por favor, preencha o campo Endereço.');
+            document.getElementById('endereco').focus();
+            return false;
+        }
+
+        // Validar Telefone
+        var telefone = document.getElementById('telefone').value;
+        if (telefone.trim() === '') {
+            alert('Por favor, preencha o campo Telefone.');
+            document.getElementById('telefone').focus();
+            return false;
+        }
+
+        // Validar Porte da Empresa
+        var porte = document.getElementById('porte').value;
+        if (porte.trim() === '') {
+            alert('Por favor, preencha o campo Porte da Empresa.');
+            document.getElementById('porte').focus();
+            return false;
+        }
+
+        // Validar Segmento da Empresa
+        var segmento = document.getElementById('segmento').value;
+        if (segmento.trim() === '') {
+            alert('Por favor, preencha o campo Segmento da Empresa.');
+            document.getElementById('segmento').focus();
+            return false;
+        }
+
+        // Validar Senha
+        var senha = document.getElementById('senha').value;
+        if (senha.trim() === '') {
+            alert('Por favor, preencha o campo Senha.');
+            document.getElementById('senha').focus();
+            return false;
+        }
+
+        // Validar Termos e Condições
+        var aceitarTermos = document.getElementById('aceitar-termos').checked;
+        if (!aceitarTermos) {
+            alert('Você deve aceitar os Termos e Condições para continuar.');
+            return false;
+        }
+
+        // Se todas as validações passarem, o formulário é enviado
+        alert('Formulário enviado com sucesso!');
+        return true;
+    }
+
+    </script>
 </body>
+<script src="../Js/scripts.js"></script>
+<script src="../Js/menu.js"></script>
 </html>

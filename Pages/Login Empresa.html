@@ -23,15 +23,12 @@
     </div>
     <div class="container">
         <div class="login-form">
-            <h2>Login Trabalhador</h2>
-            <form>
+            <h2>Login Empresa</h2>
+            <form id="form" onsubmit="return validarFormulario()">
                 <label for="email">E-MAIL:</label>
-                <input type="email" id="email" name="email" onchange="onChangeEmail()">
-                <div class="error" id="email-invalid-error">Email é inválido</div>
-                <div class="error" id="email-required-error">Email é obrigatório</div>
+                <input type="email" id="email" name="email">
                 <label for="password">SENHA:</label>
-                <input type="password" id="password" name="password" onchange="onChangePassword()">
-                <div class="error" id="passord-required-error">Senha é obrigatória</div>
+                <input type="password" id="password" name="password">
                 <button type="submit">Login</button>
                 <button type="button" onclick="location.href='cadastro trabalhador.html'">
                     <p>Cadastro</p>
@@ -42,6 +39,40 @@
             <img src="../Imagens/Escolha empresa.png" alt="Empresa">
         </div>
     </div>
+    <!-- Incluir CSS do SweetAlert (exemplo usando CDN) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11">
+
+    <!-- Incluir JavaScript do SweetAlert (exemplo usando CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+    <script>
+        function validarFormulario() {
+    var email = document.getElementById('email');
+    var password = document.getElementById('password');
+
+    // Verificar se os campos estão preenchidos
+    if (email.value.trim() === '' || password.value.trim() === '') {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Por favor, preencha todos os campos!',
+        });
+        return false; // Impedir o envio do formulário
+    }
+
+    // Mostrar mensagem de sucesso usando SweetAlert
+    Swal.fire({
+        icon: 'success',
+        title: 'Login realizado com sucesso!',
+        showConfirmButton: false,
+        timer: 3000 // Ajuste o tempo aqui (3000 ms = 3 segundos)
+    });
+
+    return false; // Impedir o envio do formulário
+}
+
+</script>
     <script src="../Js/scripts.js"></script>
     <script src="../Js/menu.js"></script>
 </body>
